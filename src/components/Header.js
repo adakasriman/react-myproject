@@ -8,7 +8,7 @@ function Header() {
         <div className="displayFlex_spacebetween">
             <div className="displayFlex_center gap_10">
                 <div className="logo">
-                    <i class="fa-solid fa-seedling"></i>
+                    <i className="fa-solid fa-seedling"></i>
                 </div>
                 <div className="title">
                     ASNR

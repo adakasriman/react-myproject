@@ -1,11 +1,12 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { Navigate } from "react-router-dom";
 function Knowledge() {
-    const isLogined = localStorage.getItem('loginvalue');
+    const [isLogedIn, setIsLogedIn] = useState(sessionStorage.getItem("loginvalue"));
+
     return (
         <div>
-            <p>wertyuioiuytrewertyuio</p>
-            {isLogined !== null  && <Navigate to={'/login'} />}
+            <p>This is Knowledge page</p>
+            {isLogedIn === null  && <Navigate to={'/login'} />}
         </div>
     );
 }

@@ -10,7 +10,7 @@ import Header from './components/Header';
 import Login from './components/Login';
 
 function App() {
-  localStorage.setItem("loginvalue",null);
+  localStorage.setItem("loginvalue", null);
   return (
     <div className="app">
       <header className='header'>

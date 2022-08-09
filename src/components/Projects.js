@@ -3,10 +3,10 @@ import { Navigate } from "react-router-dom";
 
 
 function Projects() {
-    const [isLogedIn, setIsLogedIn] = useState(localStorage.getItem("loginvalue"));
+    const [isLogedIn, setIsLogedIn] = useState(sessionStorage.getItem("loginvalue"));
     return (
         <div> This is Projects page
-            {isLogedIn !== null  && <Navigate to={'/login'} />}
+            {isLogedIn === null  && <Navigate to={'/login'} />}
         </div>
     );
 }

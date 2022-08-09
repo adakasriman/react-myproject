@@ -5,20 +5,16 @@ import App from '../App';
 
 function Login() {
     const { register, handleSubmit } = useForm();
-    const [isLogedIn, setIsLogedIn] = useState(localStorage.getItem("loginvalue"));
-    console.log(isLogedIn);
-
+    const [isLogedIn, setIsLogedIn] = useState(sessionStorage.getItem("loginvalue"));
 
     const onSubmit = data => {
         if (data.username === "sriman" && data.password === "Siva@1234") {
-            localStorage.setItem("loginvalue", JSON.stringify(1));
-            setIsLogedIn(0);
-        }else {
+            sessionStorage.setItem("loginvalue", 1);
+            setIsLogedIn(1);
+        } else {
             alert("Wrong: username / password");
         }
-    console.log(isLogedIn);
     };
-    console.log(isLogedIn);
 
 
     return (
@@ -34,7 +30,7 @@ function Login() {
                     <button type="submit">Login</button>
                 </div>
             </form>
-            {isLogedIn === null  &&  <Navigate to={'/home'} />}
+            {isLogedIn !== null && <Navigate to={'/home'} />}
         </div>
     );
 }
