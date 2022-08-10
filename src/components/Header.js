@@ -1,10 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react';
 import Menu from './Menu';
+import { useNavigate } from "react-router-dom";
+
 
 
 function Header() {
-    
+    const [isLogedIn, setIsLogedIn] = useState(sessionStorage.getItem("loginvalue"));
+    const navigate = useNavigate();
+    function logout() {
+        sessionStorage.removeItem("loginvalue");
+        navigate("/login");
+    }
+
     return (
+
         <div className="displayFlex_spacebetween">
             <div className="displayFlex_center gap_10">
                 <div className="logo">
@@ -19,7 +28,7 @@ function Header() {
                 <div>
                     <Menu />
                 </div>
-                <button className="logot">Logot</button>
+                <button className="logot" onClick={logout}>Logot</button>
             </div>
         </div>
     );

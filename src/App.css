@@ -137,7 +137,7 @@ ul {
 
 .login_page h2 {
   text-align: center;
-  margin: 18% 0 40px 0;
+  margin: 13% 0 40px 0;
   color: #1c80ec;
 }
 
@@ -259,4 +259,27 @@ section {
 
 .active {
   color: blue;
+}
+
+
+
+.loopContent{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+
+.loopContent div{
+  padding: 10px;
+  min-height: 20%;
+  max-height: 21%;
+  overflow-y: auto;
+  width: 24%;
+  border: 1px solid black;
+}
+
+.loopContent h5{
+  height: 20px;
+  overflow-y: scroll;
 }
