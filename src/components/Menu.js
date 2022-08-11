@@ -22,6 +22,7 @@ function Menu() {
                         <NavLink className="nav_link" to={'/knowledge'}>Knowledge</NavLink>
                     </li>
                 </ul>
+                
             </nav>
         </div>
     );
