@@ -9,19 +9,16 @@ function Knowledge() {
             .then(data => {
                 setApiData(data);
             });
-    }, [])
-    console.log(apiData);
-
-
+    }, []);
     return (
         <div>
             <div className='loopContent'>
                 {apiData.map(item => {
-                    return <div  key={item.id}>
+                    return <div key={item.id}>
                         <h5>
                             {item.title}
                         </h5>
-                        <hr/>
+                        <hr />
                         <p>{item.body}</p>
                     </div>;
                 })

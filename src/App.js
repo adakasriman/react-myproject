@@ -8,6 +8,7 @@ import Knowledge from './components/Knowledge';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Login from './components/Login';
+import Concepts from './components/Concepts';
 
 function App() {
   localStorage.setItem("loginvalue", null);
@@ -20,6 +21,7 @@ function App() {
         <div className='section'>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/concepts" element={<Concepts />} />
             <Route path="/home" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
