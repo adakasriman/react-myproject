@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import Login from './components/Login';
 import Concepts from './components/Concepts';
+import GetFormData from './components/concepts/GetFormData';
 
 function App() {
   localStorage.setItem("loginvalue", null);
@@ -22,6 +23,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/concepts" element={<Concepts />} />
+            <Route path="/concepts/getformdata" element={<GetFormData />} />
             <Route path="/home" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
