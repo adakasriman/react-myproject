@@ -22,13 +22,13 @@ function App() {
         <div className='section'>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/concepts" element={<Concepts />} />
             <Route path="/concepts/getformdata" element={<GetFormData />} />
             <Route path="/home" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/knowledge" element={<Knowledge />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/concepts" element={<Concepts />} />
           </Routes>
         </div>
       </section>

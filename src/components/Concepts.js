@@ -2,6 +2,8 @@ import React from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import GetFormData from './concepts/GetFormData';
+import UseContextHook from './concepts/useContext/UseContextjHook';
+import UseMemoHook from './concepts/UseMemoHook';
 
 function Concepts() {
 
@@ -10,16 +12,19 @@ function Concepts() {
             <Tabs>
                 <TabList>
                     <Tab>Get Form Data</Tab>
-                    <Tab>Title 2</Tab>
+                    <Tab>UseMeno</Tab>
+                    <Tab>UseContext</Tab>
+
                 </TabList>
 
                 <TabPanel>
-                   <div>
                     <GetFormData />
-                   </div>
                 </TabPanel>
                 <TabPanel>
-                    <h2>Any content 2</h2>
+                    <UseMemoHook />
+                </TabPanel>
+                <TabPanel>
+                    <UseContextHook />
                 </TabPanel>
             </Tabs>
         </div>

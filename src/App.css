@@ -47,6 +47,10 @@ ul {
   flex-direction: row;
 }
 
+.width_50{
+  width: 50%;
+}
+
 
 .displayFlex_center {
   display: flex;
@@ -63,6 +67,12 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.displayFlex_spaceAround {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .displayFlex_center {
@@ -283,3 +293,6 @@ section {
   height: 20px;
   overflow-y: scroll;
 }
+
+
+/* Concepts */

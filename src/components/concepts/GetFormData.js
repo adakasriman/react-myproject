@@ -1,26 +1,79 @@
+import React, { useState } from 'react';
+
 function GetFormData() {
+    const [formData, setFormData] = useState({
+        firstName: "",
+        lastName: "",
+        fatherName: "",
+        matherName: "",
+        brotherName: "",
+        state: "",
+    });
+    const [dataFromForm, setDataFromForm] = useState({})
+    const [boolean, setBoolean] = useState(false);
+    function chaneEvent(e) {
+        e.preventDefault();
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    }
+    function submit(e) {
+        e.preventDefault();
+        setDataFromForm(formData);
+        setBoolean(true);
+    }
+
     return (
-        <div>
-            <form>
-                <label></label>
-                <input type="text" name="firstName" />
-                <label></label>
-                <input type="text" name="lastName" />
-                <label></label>
-                <input type="text" name="FatherName" />
-                <label></label>
-                <input type="text" name="MatherName" />
-                <label></label>
-                <input type="text" name="brotherName" />
-                <label></label>
-                <select>
-                    <option>Select State</option>
-                    <option>AP</option>
-                    <option>TS</option>
-                    <option>TN</option>
-                    <option>KL</option>
-                </select>
+        <div className="display_flex gap_20">
+            <form className='form' onSubmit={submit}>
+                <div className='fields mt-4 mb-4'>
+                    <label>First Name</label>
+                    <input type="text" name="firstName" onChange={chaneEvent} />
+                </div>
+                <div className='fields'>
+                    <label>Last Name</label>
+                    <input type="text" onChange={chaneEvent} name="lastName" />
+                </div>
+                <div className='fields'>
+                    <label>Father Name</label>
+                    <input type="text" onChange={chaneEvent} name="fatherName" /></div>
+                <div className='fields'>
+                    <label>Mother Name</label>
+                    <input type="text" onChange={chaneEvent} name="matherName" /></div>
+                <div className='fields'>
+                    <label>Brother Name</label>
+                    <input type="text" onChange={chaneEvent} name="brotherName" />
+                </div>
+                <div className='fields'>
+                    <label>State</label>
+                    <select name='state' onChange={chaneEvent}>
+                        <option>Select State</option>
+                        <option value="ap">AP</option>
+                        <option value="ts">TS</option>
+                        <option value="tn">TN</option>
+                        <option value="kl">KL</option>
+                    </select>
+                </div>
+                <button type='submit'>Submit</button>
             </form>
+            <div>
+                {boolean && <div>
+                    <h4>Form Data</h4>
+                    <>
+                        {dataFromForm.firstName}
+                        <br />
+                        {dataFromForm.lastName}
+                        <br />
+                        {dataFromForm.fatherName}
+                        <br />
+                        {dataFromForm.matherName}
+                        <br />
+                        {dataFromForm.brotherName}
+                        <br />
+                        {dataFromForm.state}
+                    </>
+
+                </div>}
+            </div>
+
         </div>
     );
 }
