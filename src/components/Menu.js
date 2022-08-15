@@ -22,7 +22,7 @@ function Menu() {
                         <NavLink className="nav_link" to={'/knowledge'}>Knowledge</NavLink>
                     </li>
                 </ul>
-                
+
             </nav>
         </div>
     );
@@ -30,3 +30,14 @@ function Menu() {
 }
 
 export default Menu;
+
+/*
+--> Nav menu 
+
+-->NavLink
+   --> imported navLink form react-router-dom : It is help to navigate to page without
+       reloading the page and it's addinal future that is to set styles to active nav Item.
+
+-->Link: It is work functionality is same to the NavLink.
+   --> It dont have to set styles to active Nav.
+*/

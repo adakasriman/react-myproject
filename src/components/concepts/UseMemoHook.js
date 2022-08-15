@@ -1,8 +1,6 @@
 import React, { useState, useMemo } from "react";
 import GetFormData from "./GetFormData";
 
-// Again I'am using form 
-
 function UseMemoHook() {
     const [count, setCount] = useState(0);
     const [number, setNumnber] = useState(1);
@@ -12,7 +10,7 @@ function UseMemoHook() {
     }, [number]);
 
     return (
-        
+
         <div>
             <>
                 count:{count}

@@ -16,3 +16,6 @@ function NthComponent() {
 }
 
 export default NthComponent;
+
+
+// Here getting the data from the useContextHook component.

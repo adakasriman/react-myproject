@@ -36,3 +36,10 @@ function Login() {
 }
 
 export default Login;
+
+/*
+ -->Here getting the credentical's and checking the credenticals is correct or not.
+
+ -->If credentical's is valid, return to home page.
+
+*/

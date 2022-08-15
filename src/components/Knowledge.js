@@ -30,3 +30,6 @@ function Knowledge() {
 }
 
 export default Knowledge;
+
+
+// Here fetching the data from server and showing to page with help of Array map method.

@@ -35,3 +35,13 @@ function Header() {
 }
 
 export default Header;
+
+/*
+
+// It is header part and it's have menu and logut button 
+
+  --> logout button have functionality, that is to logout the page and navigate to login page.
+*/
+
+
+

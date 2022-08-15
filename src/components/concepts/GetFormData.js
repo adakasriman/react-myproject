@@ -8,14 +8,17 @@ function GetFormData() {
         matherName: "",
         brotherName: "",
         state: "",
-    });
+    }); // formData is a variable that storing form values
     const [dataFromForm, setDataFromForm] = useState({})
     const [boolean, setBoolean] = useState(false);
+    /*
+    --> onChange method is assigning the input value to name attribute of the  input and dropdown.
+    */
     function chaneEvent(e) {
         e.preventDefault();
-        setFormData({ ...formData, [e.target.name]: e.target.value });
+        setFormData({ ...formData, [e.target.name]: e.target.value }); //here assiging the value to name attribute
     }
-    function submit(e) {
+    function submit(e) {  // onsubmit 
         e.preventDefault();
         setDataFromForm(formData);
         setBoolean(true);
@@ -79,3 +82,5 @@ function GetFormData() {
 }
 
 export default GetFormData;
+
+

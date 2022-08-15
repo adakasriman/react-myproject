@@ -14,3 +14,5 @@ function Footer() {
 }
 
 export default Footer;
+
+// It is footer part and it's have social medial icons.
