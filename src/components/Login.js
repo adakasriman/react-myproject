@@ -20,6 +20,8 @@ function Login() {
     return (
         <div className="login_page">
             <h2>ASNR</h2>
+            <div className='credentials'>username:sriman and password:Siva@1234</div>
+
             <form onSubmit={handleSubmit(onSubmit)} className="displayFlex_column login_form">
                 <label>User Name</label>
                 <input type="text" {...register("username")} />

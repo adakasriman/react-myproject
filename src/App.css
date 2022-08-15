@@ -145,6 +145,10 @@ ul {
   /* text-align: center; */
 }
 
+.login_page .credentials {
+  text-align: center;
+}
+
 .login_page h2 {
   text-align: center;
   margin: 13% 0 40px 0;
