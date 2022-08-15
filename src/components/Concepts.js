@@ -2,6 +2,7 @@ import React from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import GetFormData from './concepts/GetFormData';
+import SendData from './concepts/props/SenddataWithprop';
 import UseContextHook from './concepts/useContext/UseContextjHook';
 import UseEffect from './concepts/UseEffect';
 import UseMemoHook from './concepts/UseMemoHook';
@@ -18,6 +19,7 @@ function Concepts() {
                     <Tab>useContext</Tab>
                     <Tab>useEffenct(basic)</Tab>
                     <Tab>useRef</Tab>
+                    <Tab>props</Tab>
                 </TabList>
 
                 <TabPanel>
@@ -34,6 +36,9 @@ function Concepts() {
                 </TabPanel>
                 <TabPanel>
                     <UseRef />
+                </TabPanel>
+                <TabPanel>
+                    <SendData />
                 </TabPanel>
             </Tabs>
         </div>
