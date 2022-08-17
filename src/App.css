@@ -7,7 +7,7 @@
 /* Scroll bar */
 
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 9px;
 }
 
 /* Track */
@@ -18,13 +18,13 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #d9d9d9;
+  background: #b3b3b3;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #a6a6a6;
+  background: #999999;
 }
 
 /* Close: Scroll bar */
@@ -75,11 +75,10 @@ ul {
   justify-content: space-around;
 }
 
-.displayFlex_center {
+.displayJustify_center {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .gap_10 {
@@ -118,10 +117,15 @@ ul {
   padding: 20px;
 }
 
+.plr_20{
+  padding: 0 20px;
+}
 
 .m_10 {
   margin: 10px;
 }
+
+
 
 .m_5 {
   margin: 5px;
@@ -300,3 +304,8 @@ section {
 
 
 /* Concepts */
+
+
+.projects_tabs{
+  height: 100%;
+}
