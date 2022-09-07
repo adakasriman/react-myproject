@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Navigate } from "react-router-dom";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import CurdOpertaions from './projects/crud opertaions/CurdOperations';
 import TodoProject from './projects/Todo project/TodoProject';
 
 
@@ -13,14 +14,14 @@ function Projects() {
             <Tabs>
                 <TabList>
                     <Tab>Todo Project</Tab>
-                    <Tab>pratice</Tab>
+                    <Tab> Curd Oparations</Tab>
                 </TabList>
 
                 <TabPanel>
                     <TodoProject />
                 </TabPanel>
                 <TabPanel>
-                   not statted
+                   <CurdOpertaions />
                 </TabPanel>
             </Tabs>
             </div>

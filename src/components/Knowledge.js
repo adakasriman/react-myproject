@@ -11,7 +11,7 @@ function Knowledge() {
             });
     }, []);
     return (
-        <div>
+        <>
             <div className='loopContent'>
                 {apiData.map(item => {
                     return <div key={item.id}>
@@ -25,7 +25,7 @@ function Knowledge() {
                 }
             </div>
             {isLogedIn === null && <Navigate to={'/login'} />}
-        </div >
+        </>
     );
 }
 

@@ -47,7 +47,7 @@ ul {
   flex-direction: row;
 }
 
-.width_50{
+.width_50 {
   width: 50%;
 }
 
@@ -97,6 +97,22 @@ ul {
   gap: 20px;
 }
 
+.text_center {
+  text-align: center;
+}
+
+.addAndUpdate button{
+  text-align: center;
+}
+
+
+/* Font Size */
+
+.font_25 {
+  font-size: 25px;
+}
+
+/* /Font Size */
 /* Close : Flex */
 
 /* paddings and margins */
@@ -117,7 +133,7 @@ ul {
   padding: 20px;
 }
 
-.plr_20{
+.plr_20 {
   padding: 0 20px;
 }
 
@@ -281,14 +297,14 @@ section {
 
 
 
-.loopContent{
+.loopContent {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
 
 
-.loopContent div{
+.loopContent div {
   padding: 10px;
   min-height: 20%;
   max-height: 21%;
@@ -297,15 +313,138 @@ section {
   border: 1px solid black;
 }
 
-.loopContent h5{
+.loopContent h5 {
   height: 20px;
   overflow-y: scroll;
 }
+
+/* curdOperations */
+
+.post_container {
+  position: relative;
+}
+
+.curdOperations {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.curdOperations .item {
+  color: black;
+  padding: 10px;
+  height: 30vh;
+  width: 24%;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+}
+
+.curdOperations h5 {
+  height: 20px;
+  overflow-y: scroll;
+}
+
+.add_btm {
+  position: relative;
+  top: 0;
+  margin: 10px 25px;
+  display: flex;
+  justify-content: end;
+}
+
+.add_btm button {
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: none;
+}
+
+/* /curdOperations */
 
 
 /* Concepts */
 
 
-.projects_tabs{
+.projects_tabs {
   height: 100%;
 }
+
+.display_bottom {
+  padding: 5px 0px;
+  position: absolute;
+  bottom: 0;
+  width: 94%;
+}
+
+.display_bottom div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+  background: #fff;
+}
+
+.display_bottom button:first-child {
+  background: rgb(38, 38, 215);
+  color: #fff;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 20px;
+}
+
+.display_bottom button:last-child {
+  background: red;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+}
+
+
+
+/* popup styles */
+
+.popup-box {
+  position: fixed;
+  background: #00000050;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.box {
+  position: relative;
+  width: 40%;
+  margin: 0 auto;
+  height: auto;
+  max-height: 70vh;
+  margin-top: calc(100vh - 85vh - 20px);
+  background: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  border: 1px solid #999;
+  overflow: auto;
+}
+
+.box input{
+  padding: 5px 10px 5px 0px;
+}
+
+.close-icon {
+  content: 'x';
+  cursor: pointer;
+  position: fixed;
+  right: calc(31% - 30px);
+  top: calc(100vh - 85vh - 33px);
+  background: #ededed;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid #999;
+  font-size: 20px;
+}
+
+/* /popup styles */

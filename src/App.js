@@ -10,6 +10,7 @@ import Header from './components/Header';
 import Login from './components/Login';
 import Concepts from './components/Concepts';
 import GetFormData from './components/concepts/GetFormData';
+import Post from './components/projects/crud opertaions/Post';
 
 function App() {
   localStorage.setItem("loginvalue", null);
@@ -29,6 +30,7 @@ function App() {
             <Route path="/knowledge" element={<Knowledge />} />
             <Route path="/login" element={<Login />} />
             <Route path="/concepts" element={<Concepts />} />
+            <Route path="/post/:id" element={<Post />} />
           </Routes>
         </div>
       </section>
