@@ -1,15 +1,19 @@
-import React, { createContext } from "react";
+import React, { createContext,useState } from "react";
 import NthComponent from "./NthComponent";
 
 
 export const useContext = createContext();
 
 function UseContextHook() {
+     const [value, setvalue] = useState("");
     return (
         <div>
-             <useContext.Provider value={"manu"}>
-                <NthComponent />
-            </useContext.Provider>
+            <div>
+                <div><input className="width_25" placeholder="Enter Text" onChange={(e) => setvalue(e.target.value)} /></div>
+                <useContext.Provider value={value}>
+                    <NthComponent />
+                </useContext.Provider>
+            </div>
         </div>
     );
 }

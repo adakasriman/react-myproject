@@ -1,14 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import GetFormData from './concepts/GetFormData';
+import SbilingOne from './concepts/props/Sbiling-comunication/SbilingOne';
+import SbilingTwo from './concepts/props/Sbiling-comunication/SbilingTwo';
 import SendData from './concepts/props/SenddataWithprop';
+import NthComponent from './concepts/useContext/NthComponent';
 import UseContextHook from './concepts/useContext/UseContextjHook';
 import UseEffect from './concepts/UseEffect';
 import UseMemoHook from './concepts/UseMemoHook';
 import UseRef from './concepts/UseRef';
 
 function Concepts() {
+    const [userValue, setUserValue] = useState("");
 
     return (
         <div>
@@ -16,10 +20,11 @@ function Concepts() {
                 <TabList>
                     <Tab>Get Form Data</Tab>
                     <Tab>useMeno</Tab>
-                    <Tab>useContext</Tab>
                     <Tab>useEffenct(basic)</Tab>
                     <Tab>useRef</Tab>
-                    <Tab>props</Tab>
+                    <Tab>useContext</Tab>
+                    <Tab>props between parent and child</Tab>
+                    <Tab>Sbiling communication</Tab>
                 </TabList>
 
                 <TabPanel>
@@ -29,16 +34,46 @@ function Concepts() {
                     <UseMemoHook />
                 </TabPanel>
                 <TabPanel>
-                    <UseContextHook />
-                </TabPanel>
-                <TabPanel>
                     <UseEffect />
                 </TabPanel>
                 <TabPanel>
                     <UseRef />
                 </TabPanel>
                 <TabPanel>
+                    <div className='display_flex'>
+                        <div className='displayFlex_column width_50 gap_10'>
+                            <div>
+                                <h3>Some Component</h3>
+                            </div>
+                            <div>
+                            <UseContextHook />
+                            </div>
+                        </div>
+                    </div>
+                </TabPanel>
+                <TabPanel>
                     <SendData />
+                </TabPanel>
+                <TabPanel>
+                    <div className='display_flex'>
+                        <div className='displayFlex_column width_50 gap_10'>
+                            <div>
+                                <h3>Sbiling One Component</h3>
+                            </div>
+                            <div>
+                                <SbilingOne setUserValue={setUserValue}/>
+                            </div>
+                        </div>
+
+                        <div className='displayFlex_column width_50 gap_10'>
+                            <div>
+                                <h3>Sbiling Two Component</h3>
+                            </div>
+                            <div>
+                                <SbilingTwo userValue={userValue} />
+                            </div>
+                        </div>
+                    </div>
                 </TabPanel>
             </Tabs>
         </div>
