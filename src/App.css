@@ -51,7 +51,7 @@ ul {
   width: 50%;
 }
 
-.width_25{
+.width_25 {
   width: 25%;
 }
 
@@ -105,7 +105,7 @@ ul {
   text-align: center;
 }
 
-.addAndUpdate button{
+.addAndUpdate button {
   text-align: center;
 }
 
@@ -262,10 +262,32 @@ section {
 }
 
 .section {
-  min-height: 75vh;
-  max-height: 77vh;
+  min-height: 82vh;
+  max-height: 82vh;
   overflow-y: auto;
+}
 
+/* Home Page */
+
+.home_page{
+}
+
+.home_header {
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  background: linear-gradient(#ccc, rgb(194, 217, 194));
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.home_header h1 {
+  /* text-align: center; */
+}
+
+.home_content{
+  margin: 10px 0;
 }
 
 .srima_pic {
@@ -274,6 +296,10 @@ section {
   /* padding: 10px; */
   border-radius: 30px;
 }
+
+
+
+/* close:Home page */
 
 /* Close:Section */
 
@@ -431,7 +457,7 @@ section {
   overflow: auto;
 }
 
-.box input{
+.box input {
   padding: 5px 10px 5px 0px;
 }
 

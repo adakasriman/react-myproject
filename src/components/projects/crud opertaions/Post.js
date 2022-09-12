@@ -8,9 +8,9 @@ function Post() {
         fetch('https://jsonplaceholder.typicode.com/posts')
             .then(res => res.json())
             .then(data => {
-                setIdData(data.find(item => item.id == id));
+                setIdData(data.find(item => item.id === id));
             });
-    }, [])
+    })
 
     return (
         <div>

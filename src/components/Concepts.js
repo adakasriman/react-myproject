@@ -25,6 +25,7 @@ function Concepts() {
                     <Tab>useContext</Tab>
                     <Tab>props between parent and child</Tab>
                     <Tab>Sbiling communication</Tab>
+                    <Tab>Redux(state-magement)</Tab>
                 </TabList>
 
                 <TabPanel>
@@ -74,6 +75,9 @@ function Concepts() {
                             </div>
                         </div>
                     </div>
+                </TabPanel>
+                <TabPanel>
+                    Redux
                 </TabPanel>
             </Tabs>
         </div>
